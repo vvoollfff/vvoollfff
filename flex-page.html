@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<title>Мова html</title>
+	<style type="text/css">
+		
+		h1{
+		font-family: ALGERIAN;
+		font-size: 48pt;
+		color: #252525;
+		text-align: center;
+		margin-top: 1px;
+		}
+		img.pis{
+		padding: 5px
+		margin: 5px;
+		float:right;
+		width:100px;
+		height:100px;
+		}
+		
+		.menu-main {
+		display: flex;
+		justify-content:space-around;
+  list-style: none;
+  margin: 20px 0 5px;
+  padding: 10px 0 5px;
+  text-align: center;
+  background: #24ea24;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: black;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: black;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: black;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+.vse{
+display:flex;
+align-content: space-around;
+}
+.lev{
+	float:left;
+	
+	height:550px;
+	padding: 20px;
+	margin: 20px;
+	background:#24ea24;
+}
+p{
+ font-size: 16pt;
+ float:left;
+}
+	.pra{
+	float:right;
+
+	height:550px;
+	padding: 20px;
+	margin-top: 20px;
+	background:#24ea24;
+	  }
+.pta{
+display: flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+width:400px;
+height:400px;
+ 
+   
+
+
+
+
+}
+img{
+	float:right;
+	width:200px;
+	height:200px;
+
+}
+
+
+p.iu{
+font-size:12pt;
+float:left;
+}
+	</style>
+</head>
+<body bgcolor="#53d553">
+<div class="wrapper">
+	<div class="zag">
+		<img class="pis" src="http://www.ornaments.com.ua/wp-content/uploads/2014/08/Bird%20silhouette%20AB.png">
+		<h1>BIRDWATCHING</h1>	
+	
+	</div>
+	</div>
+	<ul class="menu-main">
+  <li><a href="" class="current">HOME</a></li>
+  <li><a href="">GET STARTED</a></li>
+  <li><a href="">PHOTOS</a></li>
+  <li><a href="">GEAR</a></li>
+   <li><a href="">FORUM</a></li>
+</ul>
+<hr noshade size="15" color="#aaaaaa">
+<div class="vse">
+<div class="lev">
+<h1>WELCOME</h1>
+<p>Birdwatching, or birding, is a form of wildlife observation in which the observation of birds is a recreational activity or citizen science. <br><br>It can be done with the naked eye, through a visual enhancement device like binoculars and telescopes, by listening for bird sounds, or by watching public webcams.<br>
+&nbsp;
+<br>
+Birdwatching often involves a significant auditory component, as many bird species are more easily detected and identified by ear than by eye.<br> Most birdwatchers pursue this activity for recreational or social reasons, unlike ornithologists, who engage in the study of birds using formal scientific methods.
+</div>
+<div class="pra">
+<h1>FAVOURITE PHOTOS</h1>
+<div class="pta">
+<img src="http://vse-krugom.ru/wp-content/uploads/2014/05/%D0%93%D0%B0%D1%80%D0%BF%D0%B8%D1%8F-%D0%BE%D0%B1%D0%B5%D0%B7%D1%8C%D1%8F%D0%BD%D0%BE%D0%B5%D0%B4.jpg">
+<img src="http://www.vladtime.ru/uploads/posts/2017-04/1492706921_1156739-201355-9x140662.jpg">
+<img src="http://vz.ua/static/image/big/1376913079.jpg">
+<img src="http://nepovtorimosti.ru/wp-content/uploads/2012/07/Samyie-tsennyie-i-redkie-ptitsyi.-Goluboy-ara.jpg">
+</div>
+</div>
+</div>
+<hr noshade size="15" color="#aaaaaa" width="100%">
+<footer>
+   
+   <p class="iu"> This site was created in 2018 y. <br><br>
+   The 2011 movie The Big Year depicted three birders competing in an American Birding Association Area big year.<br>
+   Dove icon by Lorc.</p>
+  </footer>
+
+
+
+
+</body>
+</html>
